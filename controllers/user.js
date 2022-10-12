@@ -1,6 +1,5 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
-const UUID = require("uuidjs");
 const jwt = require("jsonwebtoken");
 const app = express();
 require("dotenv").config();
