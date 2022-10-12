@@ -1,0 +1,24 @@
+{
+  "name": "wonderful-pack",
+  "version": "1.0.0",
+  "description": "Edit me later",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gfouz/wonderful-pack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gfouz/wonderful-pack/issues"
+  },
+  "homepage": "https://github.com/gfouz/wonderful-pack#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
