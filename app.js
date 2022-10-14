@@ -10,7 +10,7 @@ app.use(express.static("public"));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(routes);
+app.get('/', (req, res) => res.render('index'));
 
 
 // start the server listening for requests
