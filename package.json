@@ -2,6 +2,9 @@
   "name": "wonderful-pack",
   "version": "1.0.0",
   "description": "Edit me later",
+  "engines": {
+    "node": "16.x"
+  },
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -11,8 +14,12 @@
     "type": "git",
     "url": "git+https://github.com/gfouz/wonderful-pack.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Giovani Fouz Jiménez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gfouz/wonderful-pack/issues"
