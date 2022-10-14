@@ -1,14 +1,18 @@
 // create an express app
-const express = require("express")
+const express = require("express");
+
 const PORT = process.env.PORT || 5000;
-const routes = require("./routes/routes");
+//const routes = require("./routes/routes");
 const app = express();
 
 app.use(express.static("public"));
 
-
-app.get('/', (req, res) => res.render('index'));
+app.get("/", function (req, res) {
+  res.send("<h1>Hello World!</h1>")
+})
 
 
 // start the server listening for requests
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
+
+//https://github.com/pg0408/lorem-ipsum-demo.git
