@@ -1,12 +1,13 @@
-// create an express app
 const express = require("express");
 const cors = require('cors');
 const PORT = process.env.PORT || 5000;
-//const routes = require("./routes/routes");
+const routes = require("./routes/routes");
 const app = express();
 app.use(cors());
 
+app.use(routes);
 app.use(express.static("public"));
+
 
 app.get("/", function (req, res) {
   res.send("<h1>Hello World!</h1>")
