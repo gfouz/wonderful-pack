@@ -12,12 +12,14 @@ const {
 
 
 // provinces routes
-router.get("/provincias", getProvinces);
 router.get("/provincias/:id", getProvinceById);
 router.get("/provincias/enabled/:enabled", getProvinciasEnabled);
-router.post("/provincias", createProvince);
 router.put("/provincias/:id", updateProvincia);
 router.get("/provincias/name/:name", getProvinciasByName);
+router.get("/provincias", getProvinces);
+router.post("/provincias", createProvince);
+
+
 
 
 
