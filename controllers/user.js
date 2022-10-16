@@ -3,7 +3,32 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const app = express();
 require("dotenv").config();
-const { users, rols, funcionalidades, empresasInstituciones } = require("./db.js");
+//const { users } = require("./db.js");
+
+const users = [
+  {
+    id: 1,
+    email: "gfouz1975@gmail.com",
+    password: "$2b$10$ylLLfYw8tUQG0Vl479tOmuyk8PfPVZCMSXfpw/B4p/5CilUbLEJ9K",
+    rolId: 1,
+    enabled: true,
+  },
+  {
+    id: 2,
+    email: "Sania@gmail.com",
+    password: "$2b$10$ylLLfYw8tUQG0Vl479tOmuyk8PfPVZCMSXfpw/B4p/5CilUbLEJ9K",
+    rolId: 2,
+    enabled: true,
+  },
+  {
+    id: 3,
+    email: "laura@nauta.cu",
+    password: "$2b$10$ylLLfYw8tUQG0Vl479tOmuyk8PfPVZCMSXfpw/B4p/5CilUbLEJ9K",
+    rolId: 2,
+    enabled: true,
+  },
+];
+
 
 let userId = users.length;
 
@@ -109,7 +134,6 @@ exports.loginUser = async (req, res) => {
 exports.getUsersByRol = (req, res, next) => {
 
   const rolId = parseInt(req.params.id);
-  console.log(`this is rolId: ${rolId}`);
   const result = users.filter( (user) => user.rolId === rolId );
 
   res.status(200).json({ result, message: "gotten-by-another" });
