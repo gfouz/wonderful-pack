@@ -38,7 +38,7 @@ exports.getUsers = (req, res, next) => {
 };
 
 exports.createUser = async (req, res, next) => {
-  
+
   const { email, password, rolId } = req.body;
   const isEmailExist = users.some((user) => user.email === email);
 
