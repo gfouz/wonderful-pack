@@ -1,0 +1,3 @@
+import{s as g,r as p,R as f,a as i,j as s,E as h,a1 as S}from"./index.f022ae99.js";import{u as y,S as v}from"./StatusHandler.6c4b40fd.js";import{c as x,d as A}from"./StyledLabel.15a4e9de.js";import{A as j}from"./SearchPlus.aa76161b.js";function H(n){var o,a;const[r,c]=p.exports.useState(""),{url:u,queryKey:d}=n,{data:e,isLoading:l,isError:m}=y(d,()=>A(u)),t=((a=(o=e==null?void 0:e.response)==null?void 0:o.data)==null?void 0:a.message)||(e==null?void 0:e.message);return f.useEffect(()=>{x(t,c)},[t]),i(w,{children:[m&&s("div",{children:"An error ocurred..."}),l&&i("div",{children:[s(h,{size:"sm",color:"white"}),s(S,{color:"white",children:"Loading..."})]}),s(j,{data:e==null?void 0:e.result}),r&&s(v,{message:r})]})}const w=g.div`
+  width: 100%;
+`;export{H as G};
